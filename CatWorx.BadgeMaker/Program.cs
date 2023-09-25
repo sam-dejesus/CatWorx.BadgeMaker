@@ -20,7 +20,8 @@ class Program
         break;
       }
       // Create a new Employee instance
-      Employee currentEmployee = new Employee();
+      Employee currentEmployee = new Employee(input);
+
       employees.Add(input);
     }
     return employees;
