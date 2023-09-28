@@ -5,21 +5,21 @@ namespace CatWorx.BadgeMaker
 {
     class Program
     {
-     static List<Employee> GetEmployees()
+ static List<Employee> GetEmployees()
 {
 List<Employee> employees = new List<Employee>();
 while(true) 
 {
-  // Move the initial prompt inside the loop, so it repeats for each employee
+  
   Console.WriteLine("Enter first name (leave empty to exit): ");
 
-  // change input to firstName
+  
   string firstName = Console.ReadLine() ?? "";
   if (firstName == "") 
   {
     break;
   }
-  // add a Console.ReadLine() for each value
+  
   Console.Write("Enter last name: ");
   string lastName = Console.ReadLine() ?? "";
   Console.Write("Enter ID: ");
@@ -40,6 +40,7 @@ while(true)
             List<Employee> employees = GetEmployees();
             Util.PrintEmployees(employees);
             Util.MakeCSV(employees);
+            Util.MakeBadges(employees);
         }
     }
 }

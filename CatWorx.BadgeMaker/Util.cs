@@ -2,6 +2,8 @@
 using System;
 using System.IO;
 using System.Collections.Generic;
+using System.Net.Http;
+using SkiaSharp;
 
 namespace CatWorx.BadgeMaker
 {
@@ -40,5 +42,19 @@ namespace CatWorx.BadgeMaker
         }
       }
     }
+
+    //---------------------------------
+
+public static void MakeBadges(List<Employee> employees)
+{
+  using(HttpClient client = new HttpClient())
+  {
+      for (int i = 0; i < employees.Count; i++)
+      {
+        
+      }
+  }
+}
+
   }
 }
