@@ -25,6 +25,12 @@ public Employee(string firstName, string lastName, int id, string photoUrl) {
         return PhotoUrl;
 
     }
+
+    public string GetCompanyName() {
+        
+    return "CatWorx";
+    
+    }
   }
 }
 
